@@ -63,7 +63,9 @@ function makeGrid(pixels) {
         const gridBox = document.createElement('div');
         gridBox.classList.add("gridbox");
         gridBox.addEventListener("mouseover", changeColor);
-        gridBox.addEventListener("touchmove", changeColor);
+        // gridBox.addEventListener("touchmove", (e) => {
+        //     console.dir(e);
+        //     e.target.style.backgroundColor = "black"});
         gridBox.addEventListener("mousedown", changeColor);
         grid.appendChild(gridBox);
     }
