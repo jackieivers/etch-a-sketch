@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+   <!-- FONT: Cabin Sketch -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <h1>Etch-A-Sketch</h1>
+    </header>
+
+    <main class="main">
+        <div id="settings">
+            <input id="colorPicker" type="color" value="#333333">
+            <button id="colorBtn">Color Mode</button>
+            <button id="rainbowBtn">Rainbow Mode</button>
+            <button id="eraserBtn">Eraser Mode</button>
+            <button id="resetBtn">Reset</button>
+            <div id="pixelValue">16 x 16</div>
+            <input type="range" min="1" max="100" value="16" step="1" id='pixelSelect'>
+        </div>
+        <div id="grid" class="grid">
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

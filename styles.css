@@ -1,0 +1,65 @@
+#grid {
+    width: 500px;
+    height: 500px;
+    border: 1px solid black;
+    display: grid;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 200px;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin: 0 auto;
+    background
+}
+
+body {
+    font-family: "Cabin Sketch", cursive;
+}
+
+h1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 3.5rem;
+
+}
+
+button {
+    font-family: inherit;
+    font-size: 1em;
+    padding: 5px 0px;
+    width: 150px;
+}
+
+#colorPicker {
+    width: 80px;
+    height: 80px;
+    border: none;
+
+}
+
+@media (max-width: 1100px) {
+    .main {
+        gap: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+    #grid {
+        width: 400px;
+        height: 400px;
+    }
+    #settings {
+        width: 100px;
+    }
+}
